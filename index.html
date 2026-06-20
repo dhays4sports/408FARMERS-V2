@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>408-FARMERS | Your Insurance Text Line</title>
+  <meta name="description" content="Save Dylan Haysbert, Insurance Advisor with Virginia Tam Insurance Agency. Before you buy, move, switch, or make insurance changes, text 408-FARMERS." />
+  <meta property="og:title" content="408-FARMERS | Your Insurance Text Line" />
+  <meta property="og:description" content="Before you make changes, text me first. Tap your situation and send a quick pre-filled text." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/assets/dylan-headshot.png" />
+  <link rel="icon" href="/assets/dylan-headshot.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="page" aria-label="408-FARMERS text line">
+    <section class="hero">
+      <div class="hero-bg"></div>
+      <img class="avatar" src="assets/dylan-headshot.png" alt="Dylan Haysbert" />
+      <p class="kicker">Your Insurance Text Line</p>
+      <h1>408-FARMERS</h1>
+      <p class="subhead">Before you buy, move, switch, or make changes, text me first.</p>
+
+      <div class="quick-actions" aria-label="Quick actions">
+        <a href="tel:4083276377" aria-label="Call Dylan">Call</a>
+        <a href="sms:+14083276377&body=Hi%20Dylan%2C%20I%20have%20an%20insurance%20question." aria-label="Text Dylan">Text</a>
+      </div>
+    </section>
+
+    <section class="content">
+      <a class="primary-btn" href="contact.vcf" download="Dylan-Haysbert-408-FARMERS.vcf">
+        <span>📲</span> Save 408-FARMERS
+      </a>
+
+      <section class="intro">
+        <h2>Text me if you are...</h2>
+        <p>Choose your situation, answer one quick question, and your phone will open a ready-to-send text.</p>
+      </section>
+
+      <section class="intent-grid" aria-label="Insurance help buttons">
+        <article class="intent-item notice" data-key="notice">
+          <button class="intent-card" type="button" aria-expanded="false" aria-controls="panel-notice">
+            <span class="emoji">📄</span>
+            <span><strong>NON-RENEWAL NOTICE</strong><small>When does your policy expire?</small></span>
+          </button>
+          <div class="inline-launcher" id="panel-notice" hidden>
+            <p class="inline-kicker">TEXT NOTICE</p>
+            <h3>Let’s review your options before it expires.</h3>
+            <label class="field-label" for="input-notice">Policy expiration date</label>
+            <input id="input-notice" class="smart-input" type="text" autocomplete="off" placeholder="Example: August 15" data-input="notice" />
+            <p class="field-help">You can also text me a photo of the notice after this.</p>
+            <a class="send-text-btn" data-send="notice" href="#">Text Dylan — NOTICE</a>
+            <button class="skip-btn" type="button" data-skip="notice">Skip and text anyway</button>
+          </div>
+        </article>
+        <article class="intent-item auto" data-key="car">
+          <button class="intent-card" type="button" aria-expanded="false" aria-controls="panel-car">
+            <span class="emoji">🚗</span>
+            <span><strong>BUYING A CAR?</strong><small>What vehicle are you considering?</small></span>
+          </button>
+          <div class="inline-launcher" id="panel-car" hidden>
+            <p class="inline-kicker">TEXT CAR</p>
+            <h3>Get an insurance estimate before you buy.</h3>
+            <label class="field-label" for="input-car">Vehicle year / make / model</label>
+            <input id="input-car" class="smart-input" type="text" autocomplete="off" placeholder="Example: 2024 Toyota Tacoma" data-input="car" />
+            <p class="field-help">A rough vehicle description is enough to start.</p>
+            <a class="send-text-btn" data-send="car" href="#">Text Dylan — CAR</a>
+            <button class="skip-btn" type="button" data-skip="car">Skip and text anyway</button>
+          </div>
+        </article>
+        <article class="intent-item move" data-key="move">
+          <button class="intent-card" type="button" aria-expanded="false" aria-controls="panel-move">
+            <span class="emoji">📦</span>
+            <span><strong>MOVING SOON?</strong><small>Where are you moving?</small></span>
+          </button>
+          <div class="inline-launcher" id="panel-move" hidden>
+            <p class="inline-kicker">TEXT MOVE</p>
+            <h3>Make sure your insurance moves with you.</h3>
+            <label class="field-label" for="input-move">New city or ZIP code</label>
+            <input id="input-move" class="smart-input" type="text" autocomplete="off" placeholder="Example: San Jose 95124" data-input="move" />
+            <p class="field-help">City or ZIP is enough to start.</p>
+            <a class="send-text-btn" data-send="move" href="#">Text Dylan — MOVE</a>
+            <button class="skip-btn" type="button" data-skip="move">Skip and text anyway</button>
+          </div>
+        </article>
+        <article class="intent-item rates" data-key="rates">
+          <button class="intent-card" type="button" aria-expanded="false" aria-controls="panel-rates">
+            <span class="emoji">📈</span>
+            <span><strong>RATES GO UP AGAIN?</strong><small>Who is your current carrier?</small></span>
+          </button>
+          <div class="inline-launcher" id="panel-rates" hidden>
+            <p class="inline-kicker">TEXT REVIEW</p>
+            <h3>Let’s take a second look at your coverage.</h3>
+            <label class="field-label" for="input-rates">Current carrier</label>
+            <input id="input-rates" class="smart-input" type="text" autocomplete="off" placeholder="Example: State Farm, GEICO, AAA" data-input="rates" />
+            <p class="field-help">You can text me your declarations page after this.</p>
+            <a class="send-text-btn" data-send="rates" href="#">Text Dylan — REVIEW</a>
+            <button class="skip-btn" type="button" data-skip="rates">Skip and text anyway</button>
+          </div>
+        </article>
+        <article class="intent-item landlord" data-key="rental">
+          <button class="intent-card" type="button" aria-expanded="false" aria-controls="panel-rental">
+            <span class="emoji">🏠</span>
+            <span><strong>RENTAL PROPERTY</strong><small>Tell me about your rental.</small></span>
+          </button>
+          <div class="inline-launcher" id="panel-rental" hidden>
+            <p class="inline-kicker">TEXT RENTAL</p>
+            <h3>Let’s review your landlord protection.</h3>
+            <label class="field-label" for="input-rental">Rental city or ZIP code</label>
+            <input id="input-rental" class="smart-input" type="text" autocomplete="off" placeholder="Example: Fremont 94539" data-input="rental" />
+            <p class="field-help">You do not need to enter the full address here.</p>
+            <a class="send-text-btn" data-send="rental" href="#">Text Dylan — RENTAL</a>
+            <button class="skip-btn" type="button" data-skip="rental">Skip and text anyway</button>
+          </div>
+        </article>
+        <article class="intent-item multi" data-key="multi">
+          <button class="intent-card" type="button" aria-expanded="false" aria-controls="panel-multi">
+            <span class="emoji">🏘️</span>
+            <span><strong>OWN MULTIPLE PROPERTIES?</strong><small>How many properties do you own?</small></span>
+          </button>
+          <div class="inline-launcher" id="panel-multi" hidden>
+            <p class="inline-kicker">TEXT REVIEW</p>
+            <h3>Let’s review your property portfolio.</h3>
+            <label class="field-label" for="input-multi">Number of properties</label>
+            <input id="input-multi" class="smart-input" type="text" autocomplete="off" placeholder="Example: 3 properties" data-input="multi" />
+            <p class="field-help">A rough count is enough to start the review.</p>
+            <a class="send-text-btn" data-send="multi" href="#">Text Dylan — REVIEW</a>
+            <button class="skip-btn" type="button" data-skip="multi">Skip and text anyway</button>
+          </div>
+        </article>
+        <article class="intent-item umbrella" data-key="umbrella">
+          <button class="intent-card" type="button" aria-expanded="false" aria-controls="panel-umbrella">
+            <span class="emoji">☂️</span>
+            <span><strong>PROTECT MY ASSETS</strong><small>What are you trying to protect?</small></span>
+          </button>
+          <div class="inline-launcher" id="panel-umbrella" hidden>
+            <p class="inline-kicker">TEXT UMBRELLA</p>
+            <h3>Let’s see if extra liability protection makes sense.</h3>
+            <label class="field-label" for="input-umbrella">Main concern</label>
+            <input id="input-umbrella" class="smart-input" type="text" autocomplete="off" placeholder="Example: home, rental, teen driver, assets" data-input="umbrella" />
+            <p class="field-help">One short phrase is enough.</p>
+            <a class="send-text-btn" data-send="umbrella" href="#">Text Dylan — UMBRELLA</a>
+            <button class="skip-btn" type="button" data-skip="umbrella">Skip and text anyway</button>
+          </div>
+        </article>
+        <article class="intent-item family" data-key="family">
+          <button class="intent-card" type="button" aria-expanded="false" aria-controls="panel-family">
+            <span class="emoji">👨‍👩‍👧</span>
+            <span><strong>PROTECT MY FAMILY</strong><small>Who do you want protected?</small></span>
+          </button>
+          <div class="inline-launcher" id="panel-family" hidden>
+            <p class="inline-kicker">TEXT FAMILY</p>
+            <h3>Let’s talk through family protection options.</h3>
+            <label class="field-label" for="input-family">Family protection goal</label>
+            <input id="input-family" class="smart-input" type="text" autocomplete="off" placeholder="Example: spouse and kids" data-input="family" />
+            <p class="field-help">Keep it simple. We can discuss details later.</p>
+            <a class="send-text-btn" data-send="family" href="#">Text Dylan — FAMILY</a>
+            <button class="skip-btn" type="button" data-skip="family">Skip and text anyway</button>
+          </div>
+        </article>
+        <article class="intent-item business" data-key="business">
+          <button class="intent-card" type="button" aria-expanded="false" aria-controls="panel-business">
+            <span class="emoji">💼</span>
+            <span><strong>BUSINESS CHANGES</strong><small>New lease, contract, or employees?</small></span>
+          </button>
+          <div class="inline-launcher" id="panel-business" hidden>
+            <p class="inline-kicker">TEXT BUSINESS</p>
+            <h3>Let’s make sure your business changes are covered.</h3>
+            <label class="field-label" for="input-business">Business change</label>
+            <input id="input-business" class="smart-input" type="text" autocomplete="off" placeholder="Example: new lease, contract, employee" data-input="business" />
+            <p class="field-help">A short note helps me point you in the right direction.</p>
+            <a class="send-text-btn" data-send="business" href="#">Text Dylan — BUSINESS</a>
+            <button class="skip-btn" type="button" data-skip="business">Skip and text anyway</button>
+          </div>
+        </article>
+      </section>
+
+      <section class="info-card">
+        <div class="profile-row">
+          <img src="assets/dylan-headshot.png" alt="" />
+          <div>
+            <strong>Dylan Haysbert</strong>
+            <small>Insurance Advisor</small>
+            <small>Virginia Tam Insurance Agency</small>
+          </div>
+        </div>
+
+        <a class="info-row" href="sms:+14083276377&body=Hi%20Dylan%2C%20I%20have%20an%20insurance%20question.">
+          <span class="icon">💬</span>
+          <span><small>Text or Call</small><strong>(408) 327-6377</strong></span>
+        </a>
+        <a class="info-row" href="mailto:dylan.vtam@farmersagency.com">
+          <span class="icon">✉️</span>
+          <span><small>Email</small><strong>dylan.vtam@farmersagency.com</strong></span>
+        </a>
+        <a class="info-row" href="https://408farmers.com">
+          <span class="icon">🌐</span>
+          <span><small>Website</small><strong>408Farmers.com</strong></span>
+        </a>
+        <div class="info-row"><span class="icon">📍</span><span><small>Office</small><strong>833 Corporate Way, Fremont, CA 94539</strong></span></div>
+        <div class="info-row"><span class="icon">🛡️</span><span><small>California License</small><strong>CA License #4528400</strong></span></div>
+      </section>
+
+      <section class="service-strip" aria-label="Services">
+        <span>Auto</span><span>Home</span><span>Life</span><span>Landlord</span><span>Umbrella</span><span>Business</span>
+      </section>
+    </section>
+  </main>
+
+  <script>
+    const PHONE = '+14083276377';
+    const launchers = {
+      notice: { keyword: 'NOTICE', message: value => value ? `Hi Dylan, I received a non-renewal notice and my policy expires on ${value}. I would like to review my options.` : 'Hi Dylan, I received a non-renewal notice and would like to review my options.' },
+      car: { keyword: 'CAR', message: value => value ? `Hi Dylan, I am considering a ${value} and would like an insurance estimate before I purchase.` : 'Hi Dylan, I am buying a car and would like an insurance estimate before I purchase.' },
+      move: { keyword: 'MOVE', message: value => value ? `Hi Dylan, I am moving to ${value} and would like a coverage review before I update my address.` : 'Hi Dylan, I am moving soon and would like a coverage review before I update my address.' },
+      rates: { keyword: 'REVIEW', message: value => value ? `Hi Dylan, my insurance rates went up with ${value} and I would like a coverage review.` : 'Hi Dylan, my insurance rates went up and I would like a coverage review.' },
+      rental: { keyword: 'RENTAL', message: value => value ? `Hi Dylan, I own a rental property in ${value} and would like to discuss landlord insurance options.` : 'Hi Dylan, I own a rental property and would like to discuss landlord insurance options.' },
+      multi: { keyword: 'REVIEW', message: value => value ? `Hi Dylan, I own ${value} and would like a multi-property insurance review.` : 'Hi Dylan, I own multiple properties and would like a multi-property insurance review.' },
+      umbrella: { keyword: 'UMBRELLA', message: value => value ? `Hi Dylan, I would like to know if umbrella insurance makes sense for me. My main concern is ${value}.` : 'Hi Dylan, I would like to know if umbrella insurance makes sense for me.' },
+      family: { keyword: 'FAMILY', message: value => value ? `Hi Dylan, I would like information about life insurance options to help protect my ${value}.` : 'Hi Dylan, I would like information about life insurance options for my family.' },
+      business: { keyword: 'BUSINESS', message: value => value ? `Hi Dylan, I would like help with business insurance. My business change is: ${value}.` : 'Hi Dylan, I would like help with business insurance before I make changes.' }
+    };
+
+    function smsHref(message) {
+      return `sms:${PHONE}&body=${encodeURIComponent(message)}`;
+    }
+
+    function updateHref(key) {
+      const config = launchers[key];
+      const input = document.querySelector(`[data-input="${key}"]`);
+      const send = document.querySelector(`[data-send="${key}"]`);
+      if (!config || !input || !send) return;
+      send.href = smsHref(config.message(input.value.trim()));
+    }
+
+    function closeAll(exceptKey) {
+      document.querySelectorAll('.intent-item').forEach(item => {
+        if (item.dataset.key !== exceptKey) {
+          item.classList.remove('is-open');
+          const button = item.querySelector('.intent-card');
+          const panel = item.querySelector('.inline-launcher');
+          if (button) button.setAttribute('aria-expanded', 'false');
+          if (panel) panel.hidden = true;
+        }
+      });
+    }
+
+    document.querySelectorAll('.intent-item').forEach(item => {
+      const key = item.dataset.key;
+      const button = item.querySelector('.intent-card');
+      const panel = item.querySelector('.inline-launcher');
+      const input = item.querySelector('[data-input]');
+      const skip = item.querySelector('[data-skip]');
+
+      button.addEventListener('click', () => {
+        const isOpening = !item.classList.contains('is-open');
+        closeAll(key);
+        item.classList.toggle('is-open', isOpening);
+        panel.hidden = !isOpening;
+        button.setAttribute('aria-expanded', String(isOpening));
+        if (isOpening) {
+          updateHref(key);
+          setTimeout(() => input.focus({ preventScroll: true }), 75);
+          item.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+      });
+
+      input.addEventListener('input', () => updateHref(key));
+      skip.addEventListener('click', () => {
+        window.location.href = smsHref(launchers[key].message(''));
+      });
+      updateHref(key);
+    });
+  </script>
+</body>
+</html>
